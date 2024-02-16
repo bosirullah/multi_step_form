@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+.container{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  height: 88vh; /* 100% - 2% from the top and 2% from the bottom */
+  width: 72vw; /* 100% - 2% from the left and 2% from the right */
+  margin: 6vh 14vw; /* 2% from the top and bottom, 2% from the left and right */
+  display: flex;
+
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.page{
+  margin: 0 5vw;
+  z-index: 2;
+  align-items: center;
+}
+
+.page2{
+  width: 60%;
+}
+
+.page3{
+  width: 50%;
+}
+
+.page4{
+  width: 60%;
+}
+
+.page h2{
+  font-size: 2.8vw;
+  color: hsl(213, 96%, 18%);
+  margin: 3% 0 0 0;
+}
+
+.page p{
+  font-size: 1.4vw;
+  margin: 10px 0 40px 0;
+  color: hsl(231, 11%, 63%);
+}
+
+.page1 label{
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+
+.page button{
+  padding: 12px 23px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.page1 button{
+  /* position: absolute; */
+  bottom: 100px;
+  right: 22%; 
+  color: white;
+  background-color: hsl(213, 96%, 18%);
+}
+
+
+
+.page button:hover{
+  cursor: pointer;
+}
+
+.options{
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+}
+
+.options img{
+  width: 50px;
+}
+
+.options p{
+  margin: 0 0 5px 0;
+}
+
+.options h4{
+  margin: 0 0 5px 0;
+  font-size: 1.4vw;
+}
+
+.option1, .option2, .option3{
+  height: 150px;
+  width: 140px;
+  border: 2px solid hsl(229, 24%, 87%);
+  padding: 20px 0 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+
+.option1:hover,.option2:hover,.option3:hover{
+  cursor: pointer;
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 47%, 48%);
+}
+
+.option-btn{
+  height: 50px;
+  width: 100%;
+  background: hsl(217, 100%, 97%) ;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.pageBtns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.prevBtn{
+  background-color: white;
+  padding: 200px;
+  color: hsl(231, 11%, 63%);
+}
+
+.nextBtn{
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+}
+
+input{
+  border: 3px solid hsl(229, 24%, 87%);
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0 25px;
+  padding: 0 15px;
+  outline-color: hsl(243, 100%, 62%);
+}
+
+.leftContainer {
+  height: 100%; /* 50% of the container height */
+  width: 300px; /* 25% of the container width */
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+  z-index: 2;
+}
+
+.leftContainerContent{
+  margin: 10%;
+}
+
+.numbering{
+  height: 40px;
+  width: 40px;
+  border : 1px hsl(217, 100%, 97%);
+  outline-style: solid;
+  outline-color: hsl(229, 24%, 87%);
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px 25px 0 0;
+  justify-content: center;
+}
+
+.content{
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.content p{
+  margin: 0;
+  color: hsl(231, 11%, 63%);
+}
+
+.numbering p{
+  margin-top: 9px;
+  color: white;
+}
+
+.content h4{
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.numberingNew{
+  background-color: hsl(206, 94%, 87%);
+  border: none;
+  outline-style: none;
+}
+
+.numberingNew p{
+  color: black;
+}
+
+.option-btn label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  height: 50px;
+  color: hsl(231, 11%, 63%);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(213, 96%, 18%);;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(213, 96%, 18%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(213, 96%, 18%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-26px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+  color: red;
+}
+
+/* Rounded sliders */
+.slider.round {
+  margin-top: 10px;
+  border-radius: 34px;
+  height: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.monthly{
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.add-ons{
+  width: 100%;
+}
+
+.add-on1, .add-on2, .add-on3{
+  display: flex;
+  column-gap: 30px;
+  height: 60px;
+  /* width: 100%; */
+  border: 1px solid hsl(231, 11%, 63%);
+  padding: 3% 5% 2%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.add-on1:hover,.add-on2:hover,.add-on3:hover{
+  cursor: pointer;
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 47%, 37%);
+}
+
+.add-ons input[type=checkbox]{
+  width: 30px;
+}
+
+.addOnText{
+  width: 100%;
+}
+
+.addOnText h4{
+  margin: 0;
+  font-size: 1.4vw;
+}
+
+.addOnText p{
+  font-size: 1.2vw;
+}
+
+.add-ons span{
+  margin: auto;
+}
+
+/* Add this to your CSS file */
+.add-on.clicked {
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 47%, 37%);
+}
+
+
+.page3Btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.finalCheck{
+  height: 250px;
+  /* width: 100%; */
+  background-color: hsl(231, 100%, 99%);
+  padding: 4% 6% 2%;
+  border-radius: 10px;
+}
+
+.plan{
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-content h4{
+  margin: 0;
+  color: hsl(213, 96%, 18%);
+  font-size: 1.4vw;
+  margin: 10px 0 7px;
+}
+
+.plan-content a{
+  color: hsl(231, 11%, 63%);
+}
+
+.plan span{
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin: auto 0;
+}
+
+hr{
+  width: 100%;
+  margin: 20px 0;
+}
+
+.service, .storage, .total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service p, .storage p{
+  margin: 10px 0 5px;
+}
+
+.service span, .storage span{
+  margin: auto 0;
+}
+
+.total{
+  margin: 6% 6% 2%;
+  /* width: 100%; */
+}
+
+.total p{
+  margin: 0;
+}
+
+.total span{
+  margin: auto 0;
+  color: hsl(243, 100%, 62%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nextBtn4{
+  background-color: hsl(243, 100%, 62%);
+  color: white;
+}
+
+.error-control{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.page .error {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  margin: 5px 0 0;
+  align-items: center;
+}
+
+.thankYouPage{
+  margin: auto;
+  width: 50%;
+}
+
+.thankYouImg{
+  display: flex;
+  justify-content: center;
+}
+
+.thankYouPage h2{
+  text-align: center;
+}
+
+@media (max-width: 1110px){
+  .container{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .leftContainer{
+    background: url("/assets/images/bg-sidebar-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    z-index: 2;
+    width: 100%;
+    height: 200px;
+  }
+
+  .leftContainerContent{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .subContent{
+    display: none;
+  }
+
+  .page{
+    height: 55%;
+    position: relative;
+    bottom: 100px;
+    padding: 3%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 4;
+    margin: 40px auto 0;
+    border-radius: 10px;
+  }
+
+  .page1 h2,.page1 p{
+    margin: 0;
+  }
+
+  .page1 button{
+    position: relative;
+    top: 7.1rem;
+    left: 20rem;
+  }
+
+  .pageBtn{
+    /* position: relative; */
+    display: block;
+    height: 10rem;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:0 0 10px 10px;
+    /* top: 60px; */
+  }
+
+  .page2{
+    height: 25rem;
+  }
+
+  .page2 p{
+    margin: 5px 0 10px 0 ;
+  }
+
+  .page2 h2{
+    margin: 0;
+  }
+
+  .options{
+    flex-direction: column;
+    /* height: 10px; */
+    width: 95%;
+    row-gap: 10px;
+  }
+
+  .option1, .option2, .option3{
+    height: 60px;
+    width: 100%;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content:start;
+    column-gap: 10px;
+    padding: 2%;
+  }
+
+  .option-btn{
+    margin-top: 20px;
+  }
+
+  .option-text{
+    width: 100%;
+    height: 100%;
+  }
+
+  .option1 p, .option2 p, .option3 p{
+    margin: 0;
+  }
+
+  .option1 h4, .option2 h4, .option3 h4{
+    margin: 0;
+  }
+
+  .pageBtns{
+    /* width: 600px;
+    position: relative;
+    top: 9rem;
+    left: -7rem;
+    margin: 0 auto; */
+    /* width: 600px; */
+    /* position: absolute; */
+    /* margin: 60px 150px 0 0; */
+    /* left: -10vw; */
+  }
+
+  .page3 p{
+    margin: 5px 0 10px 0;
+  }
+
+  .add-on{
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  input[type="checkbox"]{
+    margin: 0;
+  }
+
+  .finalCheck{
+    height: 140px;
+  }
+}
